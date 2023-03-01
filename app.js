@@ -79,7 +79,7 @@ function buildList() {
         
         list.innerHTML = data
         .map(current => {
-                            return `<li data-key=${current.id}><span>${current.name} </span> from ${current.country} ${current.age} years old`;
+                            return `<li data-key=${current.id}><span>${current.name} </span> from ${current.country}<br> ${current.age} years old`;
                         })
                         .join('\n');
                     };

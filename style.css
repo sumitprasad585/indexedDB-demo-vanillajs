@@ -11,6 +11,9 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    gap: 1em;
 }
 
 .row {
@@ -48,14 +51,15 @@ input[type=checkbox] {
 
 ul.whiskeyList {
     list-style: none;
+    display: flex;
 }
 
 ul.whiskeyList li {
-    padding: 0.25em 1em;
+    padding: 1em 2em;
     cursor: pointer;
     box-shadow: 0 0.2em 1em -0.5em #333;
     border-radius: 10px;
-    margin: 0.5em 0;
+    margin: 0.5em 1em;
 }
 
 ul.whiskeyList li:hover {
