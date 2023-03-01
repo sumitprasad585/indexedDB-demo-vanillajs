@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndexedDB Demo Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <form class="whiskeyForm">
+          <div class="form-group">
+            <label for="name">WhiskeyName:</label>
+            <input type="text" id="name"/>
+          </div>
+          <div class="form-group">
+            <label for="country">Country of Origin:</label>
+            <input type="text" id="country" />
+          </div>
+          <div class="form-group">
+            <label for="age">Years Old:</label>
+            <input type="text" id="age" />
+          </div>
+          <div class="form-group">
+            <label for="owned">Owned</label>
+            <input type="checkbox" id="owned" />
+          </div>
+          <div class="form-group form-group-buttons">
+            <button type="submit" id="addBtn">Add Whiskey</button>
+            <button type="button" id="updateBtn">UpdateWhiskey</button>
+            <button type="button" id="deleteBtn">Delete Whiskey</button>
+            <button type="button" id="resetBtn">ResetForm</button>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <section>
+            <ul class="whiskeyList">
+                <!-- BUILD LIST -->
+            </ul>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
